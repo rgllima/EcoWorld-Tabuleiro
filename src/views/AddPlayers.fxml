@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.AddPlayersController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="325.0" prefWidth="600.0">
+      <children>
+        <TextField fx:id="tfAddJogador" layoutX="312.0" layoutY="115.0" prefHeight="31.132912499997474" prefWidth="265.0" />
+        <Button fx:id="btAddJogador" layoutX="487.0" layoutY="150.0" mnemonicParsing="false" onAction="#adicionarJogador" prefHeight="20.1328209472631" text="Adicionar">
+          <font>
+            <Font name="STIXVariants-Regular" size="14.0" />
+          </font>
+        </Button>
+        <Label layoutX="168.0" layoutY="10.0" text="Adicione os jogadores.">
+          <font>
+            <Font name="Sawasdee Bold" size="25.0" />
+          </font>
+        </Label>
+        <Label fx:id="alertMessage" layoutX="126.0" layoutY="283.0" text=" " textFill="RED">
+          <font>
+            <Font name="System Bold" size="13.0" />
+          </font>
+        </Label>
+        <Button fx:id="iniciarDisputa" layoutX="450.0" layoutY="274.0" mnemonicParsing="false" onAction="#runGame" text="Continuar">
+          <font>
+            <Font name="Serif Bold" size="16.0" />
+          </font>
+        </Button>
+        <Label fx:id="jogadorN" layoutX="399.0" layoutY="83.0" text="1º Jogador">
+          <font>
+            <Font name="STIXGeneral-Bold" size="20.0" />
+          </font>
+        </Label>
+        <TableView fx:id="tableJogadores" layoutX="42.0" layoutY="83.0" prefHeight="162.0" prefWidth="253.0">
+          <columns>
+            <TableColumn prefWidth="75.0" text="ID" fx:id="idPlayersColumn" />
+            <TableColumn maxWidth="5000.0" minWidth="10.0" prefWidth="179.0" text="Nome" fx:id="namePlayersColumn" />
+          </columns>
+        </TableView>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

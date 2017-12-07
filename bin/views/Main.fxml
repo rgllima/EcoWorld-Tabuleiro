@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.collections.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.image.*?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.MainController">
+  <!-- TODO Add Nodes -->
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="600.0">
+      <children>
+        <Label layoutX="130.0" layoutY="14.0" text="Bem Vindo ao EcoWorld">
+          <font>
+            <Font name="Sawasdee Bold" size="30.0" />
+          </font>
+        </Label>
+        <ImageView fitHeight="127.0" fitWidth="169.0" layoutX="225.0" layoutY="79.0" pickOnBounds="true" preserveRatio="true">
+          <image>
+            <Image url="@../assets/sustentabilidade.jpg" />
+          </image>
+        </ImageView>
+        <Separator layoutX="200.0" layoutY="219.0" prefWidth="200.0" />
+        <Button id="buttonIniciar" fx:id="btIniciar" layoutX="259.0" layoutY="314.0" minHeight="35.05999755859375" mnemonicParsing="false" onAction="#btIniciar" prefHeight="43.05999755859375" text="Iniciar">
+          <font>
+            <Font name="Ubuntu Medium" size="18.0" />
+          </font>
+        </Button>
+        <Label layoutX="56.0" layoutY="234.0" text="Escolha a quantidade de Jogadores e inicie a partida.">
+          <font>
+            <Font name="Serif Regular" size="18.0" />
+          </font>
+        </Label>
+        <ChoiceBox id="qntdPlayers" fx:id="qntdPlayerChooser" layoutX="244.0" layoutY="268.0" prefHeight="27.1328125" prefWidth="109.0">
+          <items>
+            <FXCollections fx:factory="observableArrayList">
+              <String fx:value="2 Jogadores" />
+              <String fx:value="3 Jogadores" />
+              <String fx:value="4 Jogadores" />
+            </FXCollections>
+          </items>
+        </ChoiceBox>
+        <Label fx:id="errorLabelMessage" layoutX="185.0" layoutY="362.0" text="" textFill="RED">
+          <font>
+            <Font name="System Bold" size="12.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

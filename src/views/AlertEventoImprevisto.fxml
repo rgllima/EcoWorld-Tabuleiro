@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.AlertEventoImprevistoController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="300.0" prefWidth="450.0">
+      <children>
+        <Label fx:id="titleAlert" alignment="CENTER" layoutX="26.0" layoutY="14.0" prefWidth="398.0" text="Evento Imprevisto" />
+        <Label fx:id="titleEventLabel" alignment="CENTER" layoutX="26.0" layoutY="63.0" prefWidth="398.0" text="Voce fez a coleta seletiva do lixo." wrapText="true" />
+        <Label fx:id="descriptionEventLabel" contentDisplay="TOP" layoutX="26.0" layoutY="86.0" prefHeight="112.0" prefWidth="398.0" text="A Coleta Seletiva é o primeiro e o mais importante passo para fazer com que vários tipos de resíduos sigam seu caminho para reciclagem ou destinação final ambientalmente correta, pois o resíduo separado corretamente deixa de ser lixo." textAlignment="JUSTIFY" underline="false" wrapText="true" />
+        <Label fx:id="conseqEventLabel" alignment="CENTER" layoutX="26.0" layoutY="217.0" prefWidth="398.0" text="Voce pode avançar 2 casas." textAlignment="CENTER" />
+        <Button fx:id="okButton" layoutX="203.0" layoutY="251.0" mnemonicParsing="false" onAction="#isOkClicked" text="Ok!" />
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>

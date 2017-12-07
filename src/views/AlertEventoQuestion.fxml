@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/2.2" fx:controller="controller.AlertEventoQuestionController">
+  <children>
+    <Pane layoutX="0.0" layoutY="0.0" prefHeight="400.0" prefWidth="500.0">
+      <children>
+        <Label fx:id="titleAlert" alignment="CENTER" layoutX="25.0" layoutY="14.0" prefWidth="450.0" text="Responda a Pergunta." />
+        <Label fx:id="titleAlertLabel" layoutX="25.0" layoutY="41.0" prefHeight="106.1328125" prefWidth="450.0" text="blablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablba" textAlignment="JUSTIFY" wrapText="true" />
+        <RadioButton fx:id="alternativa1Radio" layoutX="25.0" layoutY="161.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="450.0" text="blablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablba" textAlignment="JUSTIFY" wrapText="true" />
+        <RadioButton fx:id="alternativa2Radio" layoutX="25.0" layoutY="201.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="450.0" text="blablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablba" textAlignment="JUSTIFY" wrapText="true" />
+        <RadioButton fx:id="alternativa3Radio" layoutX="25.0" layoutY="240.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="450.0" text="blablablbablablablbablablabl" textAlignment="JUSTIFY" wrapText="true" />
+        <RadioButton fx:id="alternativa4Radio" layoutX="25.0" layoutY="278.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="450.0" text="blablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablbablablablba" textAlignment="JUSTIFY" wrapText="true" />
+        <Button id="button" fx:id="buttonResposta" layoutX="204.0" layoutY="332.0" mnemonicParsing="false" onAction="#enviarResposta" text="Responder" />
+        <Label fx:id="alertLabel" alignment="CENTER" layoutX="25.0" layoutY="365.0" prefWidth="450.0" text="" textFill="RED">
+          <font>
+            <Font name="System Bold" size="13.0" />
+          </font>
+        </Label>
+      </children>
+    </Pane>
+  </children>
+</AnchorPane>
